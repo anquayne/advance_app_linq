@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="linq" Class="dbLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=anquayne\sqlexpress;Initial Catalog=linq;Integrated Security=True" SettingsObjectName="advance_app_linq.Properties.Settings" SettingsPropertyName="linqConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.book" Member="books">
+    <Type Name="book">
+      <Column Name="bookID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="author" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="publisher" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="yearPublished" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
